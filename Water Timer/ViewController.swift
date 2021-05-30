@@ -28,15 +28,15 @@ class ViewController: UIViewController {
     
     @IBAction func pressedGlases(_ sender: UIButton) {
         
-        guard let titelOfButtons = sender.currentTitle else {
+        guard let titeleOfButtons = sender.currentTitle else {
             return
         }
         
-        guard var getSeconds = dictionary[titelOfButtons] else {
+        guard var getSeconds = dictionary[titeleOfButtons] else {
             return
         }
         
-        guard let staticSecond = dictionary[titelOfButtons] else {
+        guard let staticSecond = dictionary[titeleOfButtons] else {
             return
         }
         
