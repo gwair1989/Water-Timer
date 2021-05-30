@@ -51,7 +51,7 @@ class ViewController: UIViewController {
                 self.progressBar.progress = Float(caunterForvard) / Float(staticSecond)
             } else {
                 self.timer.invalidate()
-                self.infoLabel.text = "Done!\n\nYou nide to drink some wather!".uppercased()
+                self.infoLabel.text = "Done!\n\nYou need to drink some wather!".uppercased()
                 AudioServicesPlaySystemSound(self.systemSoundID)
             }
         }
