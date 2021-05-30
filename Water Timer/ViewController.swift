@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         
         timer.invalidate()
         
-        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (infoLabel) in
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (blockTimer) in
             if getSeconds > 0 {
                 self.infoLabel.text = "\(getSeconds) seconds"
                 getSeconds -= 1
