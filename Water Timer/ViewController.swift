@@ -42,7 +42,6 @@ class ViewController: UIViewController {
                 self.infoLabel.text = "\(getSeconds) seconds"
                 getSeconds -= 1
                 let caunterForvard = staticSecond - getSeconds
-                print(caunterForvard)
                 self.progressBar.progress = Float(caunterForvard) / Float(staticSecond)
             } else {
                 self.timer.invalidate()
