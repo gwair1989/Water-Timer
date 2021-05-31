@@ -14,12 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var progressBar: UIProgressView!
     
     let systemSoundID: SystemSoundID = 1016
-    
-    
     let dictionary = ["10 min": 10, "15 min": 15, "20 min": 20]
-    
     var timer = Timer()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +37,6 @@ class ViewController: UIViewController {
         }
         
         timer.invalidate()
-        
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (blockTimer) in
             if getSeconds > 0 {
                 self.infoLabel.text = "\(getSeconds) seconds"
